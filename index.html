@@ -1,95 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>É Breja</title>
-    <link rel="stylesheet" href="css.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <link href="js.js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foraster Beer's</title>
+  <link rel="stylesheet" href="/css.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
 
 
 </head>
-<body>
+
+<body class="container-fluid">
 
 
-    <div class="all-page-content">
+  <div class="all-page-content">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <a class="navbar-brand text-light" href="index.html">Foraster Beer's</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link text-light" href="#">Inicio <span class="sr-only">(Página atual)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">Melhores da Casa!</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">Preços</a>
+          </li>
 
-
-    
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Tem Breja</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(Página atual)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Destaques</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Preços</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#">Desativado</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
+        </ul>
+      </div>
+    </nav>
 
 
     <main>
 
-        <section id="most-selled-beers" class="">
-            <article  class="carousel-brejas">
-                
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img class="d-block w-100 carousel-image" src="/forasteiraipa.webp" alt="Primeiro Slide">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100 carousel-image" src="/serradocipo.webp" alt="Segundo Slide" width="800px">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100" src="" alt="Terceiro Slide">
-                      </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Anterior</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Próximo</span>
-                    </a>
-                  </div>
+      <section class="most-seeled-beers">
 
-            </article>
-        </section>
+        
+        <div id="carousel-most-seleed-beers" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-most-seleed-beers" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-most-seleed-beers" data-slide-to="1"></li>
+            <li data-target="#carousel-most-seleed-beers" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="/src/imgs/serradocipo.webp" alt="Primeiro Slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="/src/imgs/Forasteira.png" alt="Segundo Slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="/src/imgs/goldenale.webp" alt="Terceiro Slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carousel-most-seleed-beers" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carousel-most-seleed-beers" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+          </a>
+        </div>
+
+
+      </section>
+
+      <section class="all-menu-beers">
+
+
+        <div>
+
+          <h6>Pilsen's</h6>
+
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card col-12" style="width: 100rem;">
+                  <img class="card-img-top" src="/src/imgs/serradocipo.webp" alt="Imagem Serra do Cipo">
+                  <div class="card-body">
+                  <p class="card-text">A Cerveja Serra do Cipó, com 4,8% de ABV e baixo amargor (IBU 10), é uma American Lager refrescante e leve. Como carro-chefe da casa, essa pilsen homenageia a charmosa cidade de Serra do Cipó, trazendo um sabor suave, ideal para quem aprecia uma boa cerveja em qualquer ocasião.</p>
+                  </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card col-12" style="width: 100rem;">
+                  <img class="card-img-top" src="/src/imgs/xwals.png" alt="Imagem de capa do card">
+                  <div class="card-body">
+                  <p class="card-text">A X Wäls é uma cerveja clara e cristalina, de baixa fermentação, que oferece um sabor refrescante e equilibrado entre malte e lúpulo. Seu aroma floral intrigante, suave e marcante, complementa a experiência, enquanto a espuma branca e cremosa, de boa duração, revela a refinada técnica de lupulagem utilizada em sua produção. Uma verdadeira homenagem à arte da cervejaria!</p>
+                  </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card col-12" style="width: 100rem;">
+                  <img class="card-img-top" src="/src/imgs/eldorado.png" alt="Imagem de capa do card">
+                  <div class="card-body">
+                  <p class="card-text">A Pilsen Eldorado é uma cerveja super refrescante e puro malte, que combina a nobreza dos maltes e lúpulos alemães com o frescor tropical e frutado do dry hopping com lúpulos americanos. Inspirada na antiga lenda indígena de uma cidade feita de ouro puro, essa cerveja traz a riqueza de sabores que encantam os paladares aventureiros.</p>
+                  </div>
+                  </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Próximo</span>
+            </a>
+            
+          </div>
+
+        </div>
+
+        <div>
+
+          <h6>IPA's</h6>
+
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card col-12" style="width: 100rem;">
+                  <img class="card-img-top" src="/src/imgs/serradocipo.webp" alt="Imagem Serra do Cipo">
+                  <div class="card-body">
+                  <p class="card-text">A Cerveja Serra do Cipó, com 4,8% de ABV e baixo amargor (IBU 10), é uma American Lager refrescante e leve. Como carro-chefe da casa, essa pilsen homenageia a charmosa cidade de Serra do Cipó, trazendo um sabor suave, ideal para quem aprecia uma boa cerveja em qualquer ocasião.</p>
+                  </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card col-12" style="width: 100rem;">
+                  <img class="card-img-top" src="/src/imgs/xwals.png" alt="Imagem de capa do card">
+                  <div class="card-body">
+                  <p class="card-text">A X Wäls é uma cerveja clara e cristalina, de baixa fermentação, que oferece um sabor refrescante e equilibrado entre malte e lúpulo. Seu aroma floral intrigante, suave e marcante, complementa a experiência, enquanto a espuma branca e cremosa, de boa duração, revela a refinada técnica de lupulagem utilizada em sua produção. Uma verdadeira homenagem à arte da cervejaria!</p>
+                  </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card col-12" style="width: 100rem;">
+                  <img class="card-img-top" src="/src/imgs/eldorado.png" alt="Imagem de capa do card">
+                  <div class="card-body">
+                  <p class="card-text">A Pilsen Eldorado é uma cerveja super refrescante e puro malte, que combina a nobreza dos maltes e lúpulos alemães com o frescor tropical e frutado do dry hopping com lúpulos americanos. Inspirada na antiga lenda indígena de uma cidade feita de ouro puro, essa cerveja traz a riqueza de sabores que encantam os paladares aventureiros.</p>
+                  </div>
+                  </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Próximo</span>
+            </a>
+            
+          </div>
+
+        </div>
+        
+
+       
+
+
+
+
+      </section>
 
 
     </main>
 
-    <footer>
-        <section>
-            <article>
-                <p>Code by Gustavo Costa</p>
-            </article>
-        </section>
-    </footer>
 
 
-</div>
+  </div>
+
+  
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <footer>
+    <section>
+      <article class="article-footer bg-dark">
+        <p class="texto text-light ">Code by Gustavo Costa</p>
+      </article>
+    </section>
+  </footer>
+
+
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
 </body>
 
 </html>

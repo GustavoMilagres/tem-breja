@@ -1,14 +1,10 @@
-.all-page-content{
-    width: 80%;
-    margin: 0 auto;
+.article-footer{
+    width: 100%;
+    height: 45px;
+    width: 100%;
+    height: 45px;
 }
 
-
-.carousel-image{
-    width: 800px;
-}
-
-.carousel-brejas{
-    width: 80%;
+.texto{
     margin: 0 auto;
 }
