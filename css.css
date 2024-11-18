@@ -113,10 +113,54 @@ body {
         height: 120px;
         width: 100%;
     }
+
+    .longnecks-container {
+        display: flex; /* Alinha os itens em linha */
+        overflow-x: auto; /* Adiciona rolagem horizontal */
+        gap: 10px; /* Espaçamento entre os cards */
+        padding: 10px; /* Espaçamento interno */
+
+    }
+    
+    .longnecks-container .card {
+        flex: 0 0 auto; /* Impede que os cards diminuam ou aumentem */
+        width: 300px; /* Define uma largura fixa */
+    }
+
+    .card-text {
+        word-wrap: break-word; /* Permite que palavras longas sejam quebradas */
+        word-break: break-word; /* Quebra a palavra se necessário */
+        overflow-wrap: break-word; /* Padrão moderno para quebra de texto */
+        overflow: hidden; /* Esconde o texto que ultrapassar os limites */
+        text-overflow: ellipsis; /* Opcional: adiciona "..." se o texto for cortado */
+        display: block; /* Garante que o comportamento seja aplicado corretamente */
+    }
     
 }
 
 @media (min-width: 720px){
+
+    .longnecks-container {
+        display: flex; /* Alinha os itens em linha */
+        overflow-x: auto; /* Adiciona rolagem horizontal */
+        gap: 10px; /* Espaçamento entre os cards */
+        padding: 10px; /* Espaçamento interno */
+
+    }
+    
+    .longnecks-container .card {
+        flex: 0 0 auto; /* Impede que os cards diminuam ou aumentem */
+        width: 300px; /* Define uma largura fixa */
+    }
+
+    .card-text {
+        word-wrap: break-word; /* Permite que palavras longas sejam quebradas */
+        word-break: break-word; /* Quebra a palavra se necessário */
+        overflow-wrap: break-word; /* Padrão moderno para quebra de texto */
+        overflow: hidden; /* Esconde o texto que ultrapassar os limites */
+        text-overflow: ellipsis; /* Opcional: adiciona "..." se o texto for cortado */
+        display: block; /* Garante que o comportamento seja aplicado corretamente */
+    }
 
 
     .navbar-dd{
